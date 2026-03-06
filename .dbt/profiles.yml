@@ -1,5 +1,6 @@
 
 eth:
+  outputs:
     ci:
       account: WCCGUAX-FI01906
       database: CI_DBT
@@ -11,4 +12,4 @@ eth:
       user: DEEPAKPATHAKUDEMY
       warehouse: compute_wh
 
-target: ci
+  target: ci

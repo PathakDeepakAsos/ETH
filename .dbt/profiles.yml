@@ -1,5 +1,6 @@
 
 eth:
+  outputs:
     ci:
       account: "{{ env_var('DBT_SNOWFLAKE_IDENTIFIER')}}"
       database: CI_DBT
@@ -11,4 +12,4 @@ eth:
       user: "{{ env_var('DBT_SNOWFLAKE_USER')}}"
       warehouse: compute_wh
 
-target: ci
+  target: ci

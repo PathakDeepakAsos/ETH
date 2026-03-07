@@ -2,7 +2,7 @@
 eth:
   outputs:
     ci:
-      account: "{{ env_var('DBT_PRIVATE_KEY_PATH') }}"
+      account: "{{ env_var('DBT_SNOWFLAKE_IDENTIFIER')}}"
       database: CI_DBT
       private_key_path: "{{ env_var('DBT_PRIVATE_KEY_PATH') }}"
       role: "{{ env_var('DBT_SNOWFLAKE_ROLE')}}"
@@ -12,7 +12,7 @@ eth:
       user: "{{ env_var('DBT_SNOWFLAKE_USER')}}"
       warehouse: compute_wh
     prod:
-      account: "{{ env_var('DBT_PRIVATE_KEY_PATH') }}"
+      account: "{{ env_var('DBT_SNOWFLAKE_IDENTIFIER')}}"
       database: PROD_DBT
       private_key_path: "{{ env_var('DBT_PRIVATE_KEY_PATH') }}"
       role: "{{ env_var('DBT_SNOWFLAKE_ROLE')}}"
